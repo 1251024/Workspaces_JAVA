@@ -1,0 +1,19 @@
+아래 셋의 차이점을 알아야 한다.
+-------------------------
+Program : 실행파일 ->"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+Process : 실행되고 있는 상태->작업관리자의 프로세스
+Thread  : 작업 단위->내가 쓰면 기억하고 있는 애, 그쓴걸 출력해주는 애, 입력받을 준비를 하는 애(커서) 각자가 다 쓰레드
+-------------------------
+
+Process(Runtime):응용프로그램(.exe)단위로 실행되는 모듈
+Runnable(Thread): 하나의 process에 여러개의 메소드 단위로 실행되는 모듈
+
+Process-T,T,T,...
+(process:os에서 제어할 수 있는 가장 작은 단위)
+
+*자바에서 메소드 단위로 프로그램을 실행하는 방법 2가지
+1.Runnable을 impliments(간단하게 실행할 때)
+2.Thread를 extends(기능 여러개가 필요할 때) -> Thread 간 양보, 죽이기, 등등..
+
+*run() 메소드는 Thread.start()가 자동 호출
+
