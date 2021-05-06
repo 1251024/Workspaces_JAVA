@@ -21,6 +21,7 @@ public class MTest02 {
 		int fileCount=0;
 		int dirCount=0;
 		
+		System.out.println(" ------dir / file 구분------");
 		for(File f:fi.listFiles()) {
 			if(f.isDirectory()) {
 				System.out.println("dir : "+f.getName());
@@ -30,7 +31,7 @@ public class MTest02 {
 				fileCount++;
 			}
 		}
-		
+		System.out.println("-------------");
 		System.out.println("file의 갯수:"+fileCount);
 		System.out.println("dir의 갯수:"+dirCount);
 	}
@@ -39,7 +40,7 @@ public class MTest02 {
 	
 	public static void prnList01(File fi) {
 		for (String list:fi.list()) {
-			System.out.println(list);	//폴더 리스트가 나옴
+			System.out.println("list - "+list);	//폴더 리스트가 나옴
 		}
 	}
 }

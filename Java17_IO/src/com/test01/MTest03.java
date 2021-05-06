@@ -10,7 +10,7 @@ public class MTest03 {
 
 	public static void main(String[] args) {
 		
-		File fi = new File("a.txt");
+		File fi = new File("a.txt");	//경로 없으면 해당 디렉토리
 		//code기준(code가 나일 경우)
 		//output:파일에 내용을 자바가 써서 내보내는 것
 		//input :자바로 읽어들이는 것
@@ -53,7 +53,7 @@ public class MTest03 {
 	private static void MyOutput(File fi) throws IOException {	
 		FileOutputStream fo = new FileOutputStream(fi);
 		
-		for(int i= 65;i<91;i++) {	//코드기준 byte가 기본, 65라는 byte라서 (아스키코드)변환해준것
+		for(int i= 65 ; i < 91 ; i++) {	//코드기준 byte가 기본, 65라는 byte라서 (아스키코드)변환해준것
 			fo.write(i);	//입출력에 대한 예외처리 해주기
 							//write메소드는 파일에 글씨써주는 메소드
 							

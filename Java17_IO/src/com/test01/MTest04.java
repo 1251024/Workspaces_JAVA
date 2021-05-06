@@ -20,7 +20,7 @@ public class MTest04 {
 		FileReader fr = new FileReader(fi);
 		int ch;
 		while((ch=fr.read()) != -1) {
-			System.out.println(ch);
+			System.out.println("ch:"+ch);
 		}
 		fr.close();
 		

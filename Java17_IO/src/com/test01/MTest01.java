@@ -10,7 +10,7 @@ public class MTest01 {
 		// mac:/Users/계정/test_io
 		File fi = new File("C:/test_io"); 	// 윈도우는 역슬래시로 잡는데 슬래시도 잡아줌
 											// 슬래시로 해야함, 역슬래시 쓸경우 역슬래시 두개\\
-		if (fi.exists()) {
+		if (fi.exists()) {						//해당경로에 파일이 있는지 아닌지 확인
 			System.out.println("exists");
 		} else {
 			System.out.println("make directory");	//directory=folder
